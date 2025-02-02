@@ -1,0 +1,50 @@
+Zadanie 18-KOD<br />
+<textarea name="nazwa" cols="65" rows="55" readonly>
+    <!DOCTYPE html>
+    <html lang="pl">
+      <head>
+        <title>Użycie funkcji</title>
+        <meta charset="utf-8" />
+      </head>
+      <body>
+        <div style="color: navy; font-size: 50px">
+          <script language="JavaScript">
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+    
+            function suma_pot(a, b) {
+              return a + b;
+            }
+    
+            function odejmowanie_pot(a, b) {
+              return a - b;
+            }
+    
+            function mnozenie_pot(a, b) {
+              return a * b;
+            }
+    
+            function od_kwadratu_pot1(a) {
+              return Math.pow(a, 2);
+            }
+    
+            function od_kwadratu_pot2(b) {
+              return Math.pow(b, 2);
+            }
+    
+            function mod_pot(a, b) {
+              return a % b;
+            }
+    
+            document.write("suma=" + suma_pot(a, b) + "<br>");
+            document.write("różnica=" + odejmowanie_pot(a, b) + "<br>");
+            document.write("iloczyn=" + mnozenie_pot(a, b) + "<br>");
+            document.write("kwadrat a=" + od_kwadratu_pot1(a) + "<br>");
+            document.write("kwadrat b=" + od_kwadratu_pot2(b) + "<br>");
+            document.write("reszta z dzielenia=" + mod_pot(a, b) + "<br>");
+          </script>
+        </div>
+      </body>
+    </html>
+    
+</textarea>
