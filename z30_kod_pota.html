@@ -1,0 +1,28 @@
+Zadanie 30-KOD<br />
+<textarea name="nazwa" cols="130" rows="25" readonly>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>
+        <script>
+          function Pociag(_wagony, _predkosc, _typ) {
+            this.wagony = _wagony;
+            this.predkosc = _predkosc;
+            this.typ = _typ;
+            this.Pociag_wyswielt_potajałło = function () {
+              document.write(
+                `Pociąg ma ${this.wagony} wagonów, jedzie z prędkością ${this.predkosc} km/h i jest typu ${this.typ}.`
+              );
+            };
+          }
+    
+          let pociag1 = new Pociag(13, 150, "transportowy");
+          pociag1.Pociag_wyswielt_potajałło();
+        </script>
+      </body>
+    </html>
+    
+</textarea>
