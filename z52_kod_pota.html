@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function okno_zamknij() {
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <textarea name="kod" cols="80" rows="25" readonly>
+        <!DOCTYPE html>
+        <html lang="pl">
+          <head>
+            <meta charset="UTF-8" />
+            <title>Zadanie 52 - Rysowanie prostokąta</title>
+          </head>
+          <body>
+            <pre id="prostokat"></pre>
+        
+            <script>
+              let nazwisko = prompt("Podaj nazwisko:").toLowerCase().trim();
+              let imie = prompt("Podaj imię:").toLowerCase().trim();
+        
+              let a_pot = (nazwisko.length % 4) + 5;
+              let b_pot = (imie.length % 6) + 20;
+        
+              let prostokat = "";
+        
+              for (let i = 0; i < b_pot; i++) {
+                prostokat += "*";
+              }
+              prostokat += "\n";
+        
+              for (let i = 0; i < a_pot - 2; i++) {
+                prostokat += "*";
+                for (let j = 0; j < b_pot - 2; j++) {
+                  prostokat += " ";
+                }
+                prostokat += "*\n";
+              }
+        
+              for (let i = 0; i < b_pot; i++) {
+                prostokat += "*";
+              }
+        
+              document.getElementById("prostokat").textContent = prostokat;
+            </script>
+          </body>
+        </html>
+        
+        </textarea
+      >
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function okno_zamknij() {
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <textarea name="kod" cols="80" rows="25" readonly>
+        <!DOCTYPE html>
+        <html lang="pl">
+          <head>
+            <meta charset="UTF-8" />
+            <title>Trójkąt - Zadanie47</title>
+          </head>
+          <body>
+            <div style="color: red; font-size: 30px">
+              <script language="JavaScript">
+                let a, b_pot, c_pot;
+        
+                do {
+                  var liczba1 = prompt("Podaj bok a:");
+                  a = parseFloat(liczba1);
+                } while (a <= 0);
+        
+                do {
+                  var liczba2 = prompt("Podaj bok b:");
+                  b_pot = parseFloat(liczba2);
+                } while (b_pot <= 0);
+        
+                do {
+                  var liczba3 = prompt("Podaj bok c:");
+                  c_pot = parseFloat(liczba3);
+                } while (
+                  c_pot <= 0 ||
+                  a + b_pot <= c_pot ||
+                  a + c_pot <= b_pot ||
+                  b_pot + c_pot <= a
+                );
+        
+                document.write("Podane boki tworzą trójkąt!<br>");
+                document.write("Bok a = " + a + "<br>");
+                document.write("Bok b = " + b_pot + "<br>");
+                document.write("Bok c = " + c_pot + "<br>");
+              </script>
+            </div>
+          </body>
+        </html>
+        
+        </textarea
+      >
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript"></script>
+  </body>
+</html>
